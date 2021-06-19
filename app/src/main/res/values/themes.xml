@@ -12,29 +12,5 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">@color/GreenMarca</item>
         <!-- Customize your theme here. -->
-
     </style>
-
-    <style name="LoginTheme" parent="FirebaseUI">
-        <item name="colorPrimary">@color/GreenMarca</item>
-        <item name="colorControlNormal">@color/white</item>
-        <item name="colorControlActivated">@color/white</item>
-        <item name="colorControlHighlight">@color/white</item>
-
-        <item name="android:textColor">@color/white</item>
-        <item name="android:textColorSecondary">@color/white</item>
-        <item name="android:textColorPrimary">@color/white</item>
-        <item name="android:textColorHint">@android:color/darker_gray</item>
-
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-        <item name="android:statusBarColor" tools:targetApi="l">@color/GreenMarca</item>
-        <item name="android:windowBackground">@color/GreenMarca</item>
-
-
-    </style>
-
-
-
-
 </resources>
