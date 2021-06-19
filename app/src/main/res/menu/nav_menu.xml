@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item android:title="MinhaLoja">
+
+       <menu>
+            <item
+                android:id="@+id/MeusProdutos"
+                android:icon="@drawable/ic_sacoola"
+                android:title="Meus Produtos"/>
+
+            <item
+                android:id="@+id/MinhasCategorias"
+                android:icon="@drawable/ic_sacoola"
+                android:title="Minhas Categorias"/>
+
+            <item
+                android:id="@+id/MeusClientes"
+                android:icon="@drawable/ic_sacoola"
+                android:title="Meus Clientes"/>
+
+            <item
+                android:id="@+id/MeusPedidos"
+                android:icon="@drawable/ic_sacoola"
+                android:title="Meus Pedidos"/>
+
+            <item
+                android:id="@+id/VendasFiado"
+                android:icon="@drawable/ic_sacoola"
+                android:title="Vendas Fiado"/>
+        </menu>
+
+    </item>
+
+
+    <item android:title="Métricas">
+
+        <menu>
+
+            <item
+                android:id="@+id/MinhasVendas"
+                android:icon="@drawable/ic_sacoola"
+                android:title="Minhas Vendas"/>
+
+            <item
+                android:id="@+id/MeusResultados"
+                android:icon="@drawable/ic_sacoola"
+                android:title="Meus Resultados"/>
+
+
+            </menu>
+
+    </item>
+
+    <item android:title="Coala">
+
+        <menu>
+
+            <item
+                android:id="@+id/IndicarCoala"
+                android:icon="@drawable/ic_sacoola"
+                android:title="Indicar Coala"/>
+            <item
+                android:id="@+id/Ajuda"
+                android:icon="@drawable/ic_sacoola"
+                android:title="Ajuda"/>
+            <item
+                android:id="@+id/Sair"
+                android:icon="@drawable/ic_sacoola"
+                android:title="Sair"/>
+        </menu>
+
+
+    </item>
+
+</menu>
