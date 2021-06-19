@@ -4,7 +4,7 @@
     tools:showIn="navigation_view">
 
 
-    <item android:title="Minha Loja">
+    <item android:title="MinhaLoja">
 
        <menu>
             <item
@@ -14,22 +14,22 @@
 
             <item
                 android:id="@+id/MinhasCategorias"
-                android:icon="@drawable/ic_categorias"
+                android:icon="@drawable/ic_sacoola"
                 android:title="Minhas Categorias"/>
 
             <item
                 android:id="@+id/MeusClientes"
-                android:icon="@drawable/ic_clientes"
+                android:icon="@drawable/ic_sacoola"
                 android:title="Meus Clientes"/>
 
             <item
                 android:id="@+id/MeusPedidos"
-                android:icon="@drawable/ic_pedidos"
+                android:icon="@drawable/ic_sacoola"
                 android:title="Meus Pedidos"/>
 
             <item
                 android:id="@+id/VendasFiado"
-                android:icon="@drawable/ic_bavenda_fiado"
+                android:icon="@drawable/ic_sacoola"
                 android:title="Vendas Fiado"/>
         </menu>
 
@@ -42,12 +42,12 @@
 
             <item
                 android:id="@+id/MinhasVendas"
-                android:icon="@drawable/ic_vendas"
+                android:icon="@drawable/ic_sacoola"
                 android:title="Minhas Vendas"/>
 
             <item
                 android:id="@+id/MeusResultados"
-                android:icon="@drawable/ic_metricas"
+                android:icon="@drawable/ic_sacoola"
                 android:title="Meus Resultados"/>
 
 
@@ -58,21 +58,21 @@
     <item android:title="Coala">
 
         <menu>
-            <item
-                android:id="@+id/Sair"
-                android:icon="@drawable/ic_sair"
-                android:title="Sair"/>
 
             <item
                 android:id="@+id/IndicarCoala"
-                android:icon="@drawable/ic_indique"
+                android:icon="@drawable/ic_sacoola"
                 android:title="Indicar Coala"/>
             <item
                 android:id="@+id/Ajuda"
-                android:icon="@drawable/ic_ajuda"
+                android:icon="@drawable/ic_sacoola"
                 android:title="Ajuda"/>
-
+            <item
+                android:id="@+id/Sair"
+                android:icon="@drawable/ic_sacoola"
+                android:title="Sair"/>
         </menu>
+
 
     </item>
 
