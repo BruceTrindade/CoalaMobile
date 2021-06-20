@@ -3,8 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-
-    <item android:title="MinhaLoja">
+    <item android:title="Minha Loja">
 
        <menu>
             <item
@@ -14,22 +13,22 @@
 
             <item
                 android:id="@+id/MinhasCategorias"
-                android:icon="@drawable/ic_sacoola"
+                android:icon="@drawable/ic_categorias"
                 android:title="Minhas Categorias"/>
 
             <item
                 android:id="@+id/MeusClientes"
-                android:icon="@drawable/ic_sacoola"
+                android:icon="@drawable/ic_clientes"
                 android:title="Meus Clientes"/>
 
             <item
                 android:id="@+id/MeusPedidos"
-                android:icon="@drawable/ic_sacoola"
+                android:icon="@drawable/ic_pedidos"
                 android:title="Meus Pedidos"/>
 
             <item
                 android:id="@+id/VendasFiado"
-                android:icon="@drawable/ic_sacoola"
+                android:icon="@drawable/ic_bavenda_fiado"
                 android:title="Vendas Fiado"/>
         </menu>
 
@@ -42,12 +41,12 @@
 
             <item
                 android:id="@+id/MinhasVendas"
-                android:icon="@drawable/ic_sacoola"
+                android:icon="@drawable/ic_vendas"
                 android:title="Minhas Vendas"/>
 
             <item
                 android:id="@+id/MeusResultados"
-                android:icon="@drawable/ic_sacoola"
+                android:icon="@drawable/ic_metricas"
                 android:title="Meus Resultados"/>
 
 
@@ -72,7 +71,6 @@
                 android:icon="@drawable/ic_sacoola"
                 android:title="Sair"/>
         </menu>
-
 
     </item>
 
