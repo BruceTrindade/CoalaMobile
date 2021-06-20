@@ -60,15 +60,15 @@
 
             <item
                 android:id="@+id/IndicarCoala"
-                android:icon="@drawable/ic_sacoola"
+                android:icon="@drawable/ic_indique"
                 android:title="Indicar Coala"/>
             <item
                 android:id="@+id/Ajuda"
-                android:icon="@drawable/ic_sacoola"
+                android:icon="@drawable/ic_ajuda"
                 android:title="Ajuda"/>
             <item
                 android:id="@+id/Sair"
-                android:icon="@drawable/ic_sacoola"
+                android:icon="@drawable/ic_sair"
                 android:title="Sair"/>
         </menu>
 
