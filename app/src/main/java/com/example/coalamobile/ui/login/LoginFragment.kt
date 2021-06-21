@@ -19,11 +19,8 @@ class LoginFragment : Fragment() {
     private var REQUEST_CODE = 1001
     private val providers = arrayListOf(
         AuthUI.IdpConfig.EmailBuilder().build(),
-        //AuthUI.IdpConfig.PhoneBuilder().build(),
-        AuthUI.IdpConfig.GoogleBuilder().build(),
-        //AuthUI.IdpConfig.FacebookBuilder().build(),
-        // AuthUI.IdpConfig.TwitterBuilder().build()
-                                            )
+        AuthUI.IdpConfig.PhoneBuilder().build(),
+        AuthUI.IdpConfig.GoogleBuilder().build())
 
 
     override fun onCreateView(
@@ -36,6 +33,8 @@ class LoginFragment : Fragment() {
             AuthUI.getInstance()
                 .createSignInIntentBuilder()
                 .setAvailableProviders(providers)
+                .setLogo(R.drawable.ic_logo_bck) // Set logo drawable
+                .setTheme(R.style.LoginTheme) // Set theme
                 .build(),
             REQUEST_CODE
         )
