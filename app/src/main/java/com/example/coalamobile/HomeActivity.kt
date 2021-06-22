@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import com.example.coalamobile.ui.login.LoginFragment
 import com.google.android.material.navigation.NavigationView
 
+
 class HomeActivity : AppCompatActivity() {
 
     lateinit var toggle: ActionBarDrawerToggle
@@ -19,13 +20,13 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
         setSupportActionBar(findViewById(R.id.toolbar))
-
+        //Meu e-mail: brucetrindade2000@gmail.com
         //Setando o fragment do login firebase
         if (savedInstanceState == null){
             supportFragmentManager
-                .beginTransaction()
-                .add(R.id.drawerLayout, LoginFragment())
-                .commit()
+                    .beginTransaction()
+                    .add(R.id.drawerLayout, LoginFragment())
+                    .commit()
         }
 
         //setando a gaveta de menu

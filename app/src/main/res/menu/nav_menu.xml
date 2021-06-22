@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
+
     <item android:title="Minha Loja">
 
        <menu>
@@ -57,6 +58,10 @@
     <item android:title="Coala">
 
         <menu>
+            <item
+                android:id="@+id/Sair"
+                android:icon="@drawable/ic_sair"
+                android:title="Sair"/>
 
             <item
                 android:id="@+id/IndicarCoala"
@@ -66,10 +71,7 @@
                 android:id="@+id/Ajuda"
                 android:icon="@drawable/ic_ajuda"
                 android:title="Ajuda"/>
-            <item
-                android:id="@+id/Sair"
-                android:icon="@drawable/ic_sair"
-                android:title="Sair"/>
+
         </menu>
 
     </item>
