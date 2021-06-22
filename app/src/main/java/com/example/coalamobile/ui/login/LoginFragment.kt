@@ -24,10 +24,11 @@ class LoginFragment : Fragment() {
     private var REQUEST_CODE = 1001
     private val providers = arrayListOf(
         AuthUI.IdpConfig.EmailBuilder().build(),
-        AuthUI.IdpConfig.PhoneBuilder().build(),
-        AuthUI.IdpConfig.GoogleBuilder().build())
+        AuthUI.IdpConfig.PhoneBuilder().build())
+        //AuthUI.IdpConfig.GoogleBuilder().build())
 
     override fun onCreateView(
+
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
