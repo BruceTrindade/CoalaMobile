@@ -1,13 +1,13 @@
 package com.example.coalamobile
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
-import androidx.fragment.app.Fragment
 import com.example.coalamobile.ui.login.LoginFragment
 import com.firebase.ui.auth.AuthUI
 import com.google.android.material.navigation.NavigationView
@@ -30,7 +30,7 @@ class HomeActivity : AppCompatActivity() {
         val drawerLayout : DrawerLayout = findViewById(R.id.drawerLayout)
         val navView : NavigationView = findViewById(R.id.nav_view)
 
-        toggle = ActionBarDrawerToggle(this,drawerLayout,R.string.open,R.string.close)
+        toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close)
         drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
@@ -41,16 +41,20 @@ class HomeActivity : AppCompatActivity() {
                   AlertDialog.Builder(this).apply {
                       setTitle("Are you sure?")
                       setPositiveButton("Yes") { _, _ ->
-
                           FirebaseAuth.getInstance().signOut()
-
-
+                        /*  supportFragmentManager
+                                  .beginTransaction()
+                                  .add(R.id.drawerLayout, LoginFragment())
+                                  .commit()*/
                       }
                       setNegativeButton("Cancel") { _, _ ->
                       }
                   }.create().show()
               }
 
+/*
+
+              */
             when(it.itemId){
 
                 R.id.MeusProdutos -> Toast.makeText(applicationContext, "clicked Home", Toast.LENGTH_SHORT).show()
