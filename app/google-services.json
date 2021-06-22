@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "349799191926",
+    "project_id": "coalamobile",
+    "storage_bucket": "coalamobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349799191926:android:fa71c3739a3b7284459657",
+        "android_client_info": {
+          "package_name": "com.example.coalamobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "349799191926-cbj7n1v497ca0sp1f6q9utnu9rpg8dih.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiNwHIBfrRawjFynH0lpzXUft5KYn-Yhc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "349799191926-cbj7n1v497ca0sp1f6q9utnu9rpg8dih.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

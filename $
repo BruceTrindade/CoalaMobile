@@ -1,0 +1,10 @@
+erro de keytool: java.lang.Exception: O arquivo da área de armazenamento de chaves não existe. ~/.android/debug.keystoreA
+java.lang.Exception: O arquivo da área de armazenamento de chaves não existe. ~/.android/debug.keystoreA
+	at sun.security.tools.keytool.Main.doCommands(Main.java:768)
+	at sun.security.tools.keytool.Main.run(Main.java:366)
+	at sun.security.tools.keytool.Main.main(Main.java:359)
+erro de keytool: java.lang.Exception: O arquivo da área de armazenamento de chaves não existe. ~/.android/debug.keystoreA
+java.lang.Exception: O arquivo da área de armazenamento de chaves não existe. ~/.android/debug.keystoreA
+	at sun.security.tools.keytool.Main.doCommands(Main.java:768)
+	at sun.security.tools.keytool.Main.run(Main.java:366)
+	at sun.security.tools.keytool.Main.main(Main.java:359)
