@@ -57,8 +57,9 @@ class LoginFragment : Fragment() {
                 // sign in failed
             }
         }
-    }
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
+         }
+
+        override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(LoginViewModel::class.java)
         // TODO: Use the ViewModel
