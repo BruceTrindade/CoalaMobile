@@ -8,13 +8,13 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
-    defaultConfig {
+     defaultConfig {
         applicationId "com.example.coalamobile"
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
-
+         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -45,9 +45,15 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
 
     //FireBase
-    implementation 'com.google.firebase:firebase-auth:19.2.0'
+    //implementation 'com.google.firebase:firebase-auth:19.2.0'
     /*implementation 'com.firebaseui:firebase-uiauth:6.2.1'*/
+    implementation 'com.google.firebase:firebase-auth-ktx'
     implementation 'com.firebaseui:firebase-ui-auth:6.4.0'
+    implementation platform('com.google.firebase:firebase-bom:28.1.0')
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+
+
+    implementation 'com.android.support:multidex:1.0.3'
 
     implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
     implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
