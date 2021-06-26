@@ -3,21 +3,28 @@ package com.example.coalamobile
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
-import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.coalamobile.ui.login.LoginFragment
-import com.firebase.ui.auth.AuthUI
+import com.firebase.ui.auth.util.GoogleApiUtils
+import com.google.android.gms.common.api.GoogleApi
+import com.google.android.gms.auth.api.Auth
+import com.google.android.gms.auth.api.credentials.Credentials
+import com.google.android.gms.common.api.GoogleApiClient
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 
 class HomeActivity : AppCompatActivity() {
 
+
     lateinit var toggle: ActionBarDrawerToggle
-    lateinit var auth: FirebaseAuth
+    val firebaseAuth = FirebaseAuth.getInstance()
+    lateinit var mGoogleApiClient: GoogleApiClient
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,7 +32,7 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
         setSupportActionBar(findViewById(R.id.toolbar))
-        //Meu e-mail: brucetrindade2000@gmail.com
+
         //setando a gaveta de menu
         val drawerLayout : DrawerLayout = findViewById(R.id.drawerLayout)
         val navView : NavigationView = findViewById(R.id.nav_view)
@@ -35,51 +42,37 @@ class HomeActivity : AppCompatActivity() {
         toggle.syncState()
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
+        lateinit var mGoogleApiUtils: GoogleApiUtils
+
           navView.setNavigationItemSelectedListener {
 
               if (it.itemId == R.id.Sair) {
                   AlertDialog.Builder(this).apply {
-                      setTitle("Are you sure?")
-                      setPositiveButton("Yes") { _, _ ->
-                          FirebaseAuth.getInstance().signOut()
-                        /*  supportFragmentManager
+                      setTitle("Quer realmente sair?")
+                      setPositiveButton("Sim") { _, _ ->
+                          firebaseAuth.signOut()
+                                    supportFragmentManager
                                   .beginTransaction()
                                   .add(R.id.drawerLayout, LoginFragment())
-                                  .commit()*/
-                      }
-                      setNegativeButton("Cancel") { _, _ ->
-                      }
+                                  .commit()//
+                      } //Fim do set positive button
+                      setNegativeButton("Não") { _, _ ->
+                      } // do NefativeButton
                   }.create().show()
-              }
+              }//fim da condicional if
 
-/*
-
-              */
-            when(it.itemId){
-
-                R.id.MeusProdutos -> Toast.makeText(applicationContext, "clicked Home", Toast.LENGTH_SHORT).show()
-                R.id.MinhasCategorias -> Toast.makeText(applicationContext, "clicked Home", Toast.LENGTH_SHORT).show()
-                R.id.MeusClientes -> Toast.makeText(applicationContext, "clicked Home", Toast.LENGTH_SHORT).show()
-                R.id.MeusPedidos -> Toast.makeText(applicationContext, "clicked Home", Toast.LENGTH_SHORT).show()
-                R.id.VendasFiado -> Toast.makeText(applicationContext, "clicked Home", Toast.LENGTH_SHORT).show()
-                R.id.MeusResultados -> Toast.makeText(applicationContext, "clicked Home", Toast.LENGTH_SHORT).show()
-                R.id.IndicarCoala -> Toast.makeText(applicationContext, "clicked Home", Toast.LENGTH_SHORT).show()
-                R.id.Ajuda -> Toast.makeText(applicationContext, "clicked Home", Toast.LENGTH_SHORT).show()
-                              /*R.id.Sair -> Toast.makeText(applicationContext, "clicked Home", Toast.LENGTH_SHORT).show()*/
-            }
-
-            true
+          true
 
         }
 
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+   /* override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
         if (toggle.onOptionsItemSelected(item)) {
             return true
 
         }
         return super.onOptionsItemSelected(item)
-    }
+    }*/
 }
