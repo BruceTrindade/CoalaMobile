@@ -32,8 +32,8 @@ class LoginFragment : Fragment() {
     private var REQUEST_CODE = 1001
     private val providers = arrayListOf(
         AuthUI.IdpConfig.EmailBuilder().build(),
-        AuthUI.IdpConfig.PhoneBuilder().build(),
-        AuthUI.IdpConfig.GoogleBuilder().build())
+        AuthUI.IdpConfig.PhoneBuilder().build())
+      //  AuthUI.IdpConfig.GoogleBuilder().build())
 
     override fun onCreateView(
 
@@ -49,7 +49,9 @@ class LoginFragment : Fragment() {
                 .setLogo(R.drawable.ic_logo_bck) // Set logo drawable
                 .setTheme(R.style.LoginTheme) // Set theme
                 .build(),
+
             REQUEST_CODE
+
         )
         return view
     }
@@ -71,13 +73,6 @@ class LoginFragment : Fragment() {
             }
         }
          }
-
-//             Credentials.getClient(this).disableAutoSignIn();
-//            firebaseAuth.currentUser.disableAutoSignIn()
-//            GoogleApiUtils.getCredentialsClient(context).disableAutoSignIn()
-//            GoogleApiUtils.getCredentialsClient(LoginFragment)
-//                                 .disableAutoSignIn()
-
 
         override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
