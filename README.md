@@ -4,7 +4,7 @@ Com o intuito de estudar o desenvolvimento nativo android com kotlin, resolvi de
  ***
 Requistos Funcionais do aplicativo:
 - [x] RF01: Pelo menos duas opções de login
-- [x] RF02: Login com o Google
+- [x] RF02: Login com o E-mail
 - [x] RF03: Login com número de telefone
 - [x] RF04: [Navegation Drawer](https://developer.android.com/guide/navigation/navigation-ui)
 - [ ] RF05: Cadastrar clientes
