@@ -20,3 +20,7 @@ Requistos Funcionais do aplicativo:
 Os Requisitos Funcionais serão atualizados de acordo com o desenvolvimento do aplicativo
 ***
 Faço modificações diárias no app e ele vai sendo melhorado de acordo com o meu aprendizado.
+
+![gifuimeditation](https://github.com/BruceTrindade/CoalaMobile/blob/main/GifCoalaApp.gif)
+
+
