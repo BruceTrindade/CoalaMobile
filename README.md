@@ -1,6 +1,7 @@
+##Projeto Pausado
 # coala mobile - Aplicativo para gestão empresarial
 
-Com o intuito de estudar o desenvolvimento nativo android com kotlin, decidi desenvolver esse app para praticar conhecimentos. O objetivo é que: Assim que o app estiver com todos os requisitos funcionais desenvolvidos, publicar ele na Google Play para adquirir conhecimentos de todas as fases do desenvolvimento de um app, da ideia até a publicação na loja. 
+Com o intuito de estudar o desenvolvimento nativo android com kotlin, decidi desenvolver esse app para praticar conhecimentos.
  ***
 Requistos Funcionais do aplicativo:
 - [x] RF01: Pelo menos duas opções de login
@@ -21,7 +22,7 @@ Requistos Funcionais do aplicativo:
 
 Os Requisitos Funcionais serão atualizados de acordo com o desenvolvimento do aplicativo
 ***
-Faço modificações diárias no app e ele vai sendo melhorado de acordo com o meu aprendizado.
+Faço modificações no app e ele vai sendo melhorado de acordo com o meu aprendizado.
 ***
 ![gifuimeditation](https://github.com/BruceTrindade/CoalaMobile/blob/main/GifCoalaApp.gif)
 
@@ -29,8 +30,7 @@ Faço modificações diárias no app e ele vai sendo melhorado de acordo com o m
 
 # koala mobile - Application for business management
 
-In order to study android native development with kotlin, I decided to develop this app to practice knowledge. The goal is that: Once the app has all the functional requirements developed, publish it on Google Play to gain knowledge of all stages of app development, from idea to in-store publishing.
- ***
+In order to study android native development with kotlin, I decided to develop this app to practice knowledge.
 Application Functional Requirements:
 - [x] RF01: At least two login options
 - [x] RF02: Login with Email
@@ -49,6 +49,4 @@ Application Functional Requirements:
 
 
 Functional Requirements will be updated as the application develops.
-***
-I make daily changes to the app and it is being improved as I learn.
 ***
